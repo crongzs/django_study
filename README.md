@@ -1,1 +1,1 @@
-# django_study
+# Django study notes
