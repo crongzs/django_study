@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图书管理</title>
+    <link rel="stylesheet" href="{% static 'app3/css/app3-1book.css' %}">
+</head>
+<body>
+    <nav>
+        <ul class="nav">
+            <li><a href="{% url 'app3:app3-2' %}">图书首页</a></li>
+            <li><a href="{% url 'app3:app3-3' %}">发布图书</a></li>
+        </ul>
+    </nav>
+    {% block content %}
+
+    {% endblock %}
+</body>
+</html>

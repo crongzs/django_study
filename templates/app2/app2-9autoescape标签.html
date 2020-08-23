@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>autoescape 标签</title>
+</head>
+<body>
+    <h1>autoescape 标签</h1>
+    <p>模板中默认是已经开启了自动转义的</p>
+    <p>{{ url }}</p>
+    <p>关闭自动转义</p>
+    {% autoescape off %}
+        <p>{{ url }}</p>
+    {% endautoescape %}
+</body>
+</html>

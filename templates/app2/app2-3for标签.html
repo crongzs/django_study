@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>for 标签</title>
+</head>
+<body>
+    <h1>for 标签的使用</h1>
+    <u>
+        {% for example in examples %}
+            <li>{{ example }}</li>
+        {% endfor %}
+    </u>
+    <h1>反向遍历</h1>
+    <ul>
+        {% for book in books reversed%}
+            <li>{{ book }}</li>
+        {% endfor %}
+    </ul>
+    <h1>遍历字典</h1>
+    <ul>
+        {% for key, value in persion.items %}
+            <li>{{ key }} : {{ value }}</li>
+        {% endfor %}
+
+        {% for key in persion.keys %}
+            <li>{{ key }}</li>
+        {% endfor %}
+
+        {% for value in persion.values %}
+            <li>{{ value }}</li>
+        {% endfor %}
+    </ul>
+    <h1>其它用法</h1>
+    <table>
+        <thead>
+        <tr>
+            <td>subscript</td>
+            <td>name</td>
+            <td>author</td>
+            <td>price</td>
+        </tr>
+        </thead>
+        <tbody>
+            {% for book in books %}
+                <tr>
+                    <td>{{ forloop.counter }}</td>
+                    <td>{{ book.name }}</td>
+                    <td>{{ book.author }}</td>
+                    <td>{{ book.price }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <table>
+        <thead>
+        <tr>
+            <td>subscript</td>
+            <td>name</td>
+            <td>author</td>
+            <td>price</td>
+        </tr>
+        </thead>
+        <tbody>
+            {% for book in books %}
+                <tr>
+                    <td>{{ forloop.counter0 }}</td>
+                    <td>{{ book.name }}</td>
+                    <td>{{ book.author }}</td>
+                    <td>{{ book.price }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <table>
+        <thead>
+        <tr>
+            <td>subscript</td>
+            <td>name</td>
+            <td>author</td>
+            <td>price</td>
+        </tr>
+        </thead>
+        <tbody>
+            {% for book in books reversed %}
+                <tr>
+                    <td>{{ forloop.revcounter }}</td>
+                    <td>{{ book.name }}</td>
+                    <td>{{ book.author }}</td>
+                    <td>{{ book.price }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <table>
+        <thead>
+        <tr>
+            <td>subscript</td>
+            <td>name</td>
+            <td>author</td>
+            <td>price</td>
+        </tr>
+        </thead>
+        <tbody>
+            {% for book in books reversed %}
+                <tr>
+                    <td>{{ forloop.revcounter0 }}</td>
+                    <td>{{ book.name }}</td>
+                    <td>{{ book.author }}</td>
+                    <td>{{ book.price }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <table>
+        <thead>
+        <tr>
+            <td>subscript</td>
+            <td>name</td>
+            <td>author</td>
+            <td>price</td>
+        </tr>
+        </thead>
+        <tbody>
+            {% for book in books reversed %}
+                {% if forloop.first %}
+                    <tr style="background: red;">
+                {% elif forloop.last %}
+                    <tr style="background: pink;">
+                {% else %}
+                    <tr>
+                {% endif %}
+                    <td>{{ forloop.revcounter0 }}</td>
+                    <td>{{ book.name }}</td>
+                    <td>{{ book.author }}</td>
+                    <td>{{ book.price }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <ul>
+        {% for comment in comments %}
+            <li>{{ comment }}</li>
+        {% empty %}
+            <li>没有任何评论</li>
+        {% endfor %}
+
+    </ul>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户系统案例</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+          integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-dark bg-dark">
+    <a class="navbar-brand" href="{% url 'app9:app9-1' %}">ku_rong</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="{% url 'app9:app9-1' %}">Home <span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+        <ul class="navbar-nav navbar-right">
+            {% if username %}
+                <li class="nav-item">
+                    <a class="nav-link" href="#">{{ username }}</a>
+                </li>
+            {% else %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'app9:app9-3' %}">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'app9:app9-2' %}">Sign in</a>
+                </li>
+            {% endif %}
+        </ul>
+    </div>
+</nav>
+{% block body %}
+
+{% endblock %}
+
+</body>
+</html>

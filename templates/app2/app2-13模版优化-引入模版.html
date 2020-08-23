@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>模版优化-引入模版</title>
+</head>
+<body>
+{% include 'app2/app2-13模版优化-引入模版01.html' %}
+<div class="content"><h1>模版优化-引入模版</h1></div>
+{% if age %}
+    {% include 'app2/app2-13模版优化-引入模版03.html' %}
+{% else %}
+    {% include 'app2/app2-13模版优化-引入模版03.html' with age=18 %}
+{% endif %}
+
+{% include 'app2/app2-13模版优化-引入模版02.html' %}
+
+</body>
+</html>

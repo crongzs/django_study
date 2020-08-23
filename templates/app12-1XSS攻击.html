@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>XSS攻击防御</title>
+</head>
+<body>
+{% for comment in comments %}
+    <p>{{ comment.content }}</p>
+{% endfor %}
+
+<form action="{% url 'app12:app12-2' %}" method="post">
+    {% csrf_token %}
+    <textarea name="content" id="" cols="30" rows="3"></textarea>
+    <p>
+        <input type="submit" value="submit">
+    </p>
+</form>
+
+</body>
+</html>

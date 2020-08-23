@@ -1,0 +1,10 @@
+{% extends 'app3/app3-5图书管理-base.html' %}
+
+{% block content %}
+    <p>书名：{{ book.1 }}</p>
+    <p>作者：{{ book.2 }}</p>
+    <form action="{% url 'app3:app3-5' %}" method="post">
+        <input type="hidden" name="id" value="{{ book.0 }}">
+        <input type="submit" value="删除">
+    </form>
+{% endblock %}

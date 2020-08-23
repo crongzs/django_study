@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>模版优化-模版继承</title>
+</head>
+<body>
+    <header>
+        <h1>This is base header</h1>
+    </header>
+    {% block content %}
+    Hello {{ username }}! I am base html
+    {% endblock %}
+    <footer>
+        <h1>This is base footer</h1>
+    </footer>
+</body>
+</html>

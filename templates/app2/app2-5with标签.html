@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>with 标签</title>
+</head>
+<body>
+    <h1>with 标签的用法</h1>
+    {% with shuaide=persons.1  %}
+        <p>{{ shuaide }}</p>
+    {% endwith %}
+
+    {% with persons.0 as zuishuaide %}
+        <p>{{ zuishuaide }}</p>
+    {% endwith %}
+</body>
+</html>

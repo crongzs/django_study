@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>加载静态文件</title>
+</head>
+<body>
+<h1>加载app2/static/app2/Django.png</h1>
+<img src="{% static 'app2/Django.png' %}" alt="">
+<h1>加载/static/app2/Python.png</h1>
+<img src="{% static 'app2/Python.png' %}" alt="">
+<h1>加载/static/world.jpeg</h1>
+<img src="{% static 'world.jpeg' %}" alt="">
+</body>
+</html>

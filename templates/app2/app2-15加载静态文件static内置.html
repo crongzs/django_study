@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>static 变成内置标签，不用load</title>
+</head>
+<body>
+<h1>加载app2/static/app2/Django.png</h1>
+<img src="{% static 'app2/Django.png' %}" alt="">
+<h1>加载/static/app2/Python.png</h1>
+<img src="{% static 'app2/Python.png' %}" alt="">
+<h1>加载/static/world.jpeg</h1>
+<img src="{% static 'world.jpeg' %}" alt="">
+</body>
+</html>

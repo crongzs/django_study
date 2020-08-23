@@ -1,0 +1,19 @@
+{% extends 'app9/app9-base.html' %}
+
+{% block body %}
+    <form action="" method="post">
+        {% csrf_token %}
+        <input type="text" name="name">
+        <input type="submit" value="submit">
+    </form>
+    <div>
+        <h1>django.contrib.messages.context_processors.messages</h1>
+        {% for message in messages %}
+            <p>{{ message }}</p>
+        {% endfor %}
+        <h1>django.template.context_processors.media</h1>
+        <img src="{{ MEDIA_URL }}django.png" alt="">
+        <h1>django.template.context_processors.static</h1>
+        <script type="text/javascript" src="{{ STATIC_URL }}app9/js/app9-4.js"></script>
+    </div>
+{% endblock %}

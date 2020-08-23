@@ -1,0 +1,196 @@
+INFO 2020-03-30 11:22:20,555 autoreload 1193 4524109248 Watching for file changes with StatReloader
+WARNING 2020-03-30 11:22:21,007 log 1193 123145558683648 Not Found: /app17/
+WARNING 2020-03-30 11:22:21,008 basehttp 1193 123145558683648 "GET /app17/ HTTP/1.1" 404 4389
+WARNING 2020-03-30 11:22:23,296 log 1193 123145558683648 Not Found: /app17/
+WARNING 2020-03-30 11:22:23,296 basehttp 1193 123145558683648 "GET /app17/ HTTP/1.1" 404 4389
+INFO 2020-03-30 11:22:35,542 basehttp 1193 123145558683648 "GET /app17/app17-user/ HTTP/1.1" 200 40
+INFO 2020-03-30 11:33:28,410 autoreload 1193 4524109248 /Users/ku_rong/My/Study/django_study/django_study/django_study/settings.py changed, reloading.
+INFO 2020-03-30 11:33:28,988 autoreload 1359 4504612288 Watching for file changes with StatReloader
+INFO 2020-03-30 11:34:10,544 autoreload 1359 4504612288 /Users/ku_rong/My/Study/django_study/django_study/django_study/urls.py changed, reloading.
+INFO 2020-03-30 11:34:10,900 autoreload 1378 4405902784 Watching for file changes with StatReloader
+INFO 2020-03-30 11:34:42,514 autoreload 1378 4405902784 /Users/ku_rong/My/Study/django_study/django_study/django_study/urls.py changed, reloading.
+INFO 2020-03-30 11:34:42,855 autoreload 1386 4676398528 Watching for file changes with StatReloader
+INFO 2020-03-30 16:43:49,579 autoreload 2643 4589911488 Watching for file changes with StatReloader
+INFO 2020-03-30 16:47:29,947 autoreload 2643 4589911488 /Users/ku_rong/My/Study/django_study/django_study/app18/views.py changed, reloading.
+INFO 2020-03-30 16:47:30,299 autoreload 2672 4536159680 Watching for file changes with StatReloader
+WARNING 2020-03-30 16:47:46,586 log 2672 123145550794752 Not Found: /app17/app17-user/self-siganl1/
+WARNING 2020-03-30 16:47:46,586 basehttp 2672 123145550794752 "GET /app17/app17-user/self-siganl1/ HTTP/1.1" 404 4648
+WARNING 2020-03-30 16:48:00,497 log 2672 123145550794752 Not Found: /app18/self-siganl1/
+WARNING 2020-03-30 16:48:00,497 basehttp 2672 123145550794752 "GET /app18/self-siganl1/ HTTP/1.1" 404 4457
+WARNING 2020-03-30 16:48:02,463 log 2672 123145550794752 Not Found: /app18/self-siganl1/
+WARNING 2020-03-30 16:48:02,463 basehttp 2672 123145550794752 "GET /app18/self-siganl1/ HTTP/1.1" 404 4457
+WARNING 2020-03-30 16:48:04,565 log 2672 123145550794752 Not Found: /app18/self-siganl1/
+WARNING 2020-03-30 16:48:04,565 basehttp 2672 123145550794752 "GET /app18/self-siganl1/ HTTP/1.1" 404 4457
+WARNING 2020-03-30 16:48:12,640 log 2672 123145550794752 Not Found: /app18/self-siganl1/
+WARNING 2020-03-30 16:48:12,640 basehttp 2672 123145550794752 "GET /app18/self-siganl1/ HTTP/1.1" 404 4457
+WARNING 2020-03-30 16:48:15,271 log 2672 123145550794752 Not Found: /app18/self-siganl1/
+WARNING 2020-03-30 16:48:15,271 basehttp 2672 123145550794752 "GET /app18/self-siganl1/ HTTP/1.1" 404 4457
+WARNING 2020-03-30 16:48:16,826 log 2672 123145550794752 Not Found: /app18/self-siganl1/
+WARNING 2020-03-30 16:48:16,826 basehttp 2672 123145550794752 "GET /app18/self-siganl1/ HTTP/1.1" 404 4457
+WARNING 2020-03-30 16:48:18,316 log 2672 123145550794752 Not Found: /app18/self-siganl1/
+WARNING 2020-03-30 16:48:18,317 basehttp 2672 123145550794752 "GET /app18/self-siganl1/ HTTP/1.1" 404 4457
+INFO 2020-03-30 16:48:32,423 autoreload 2672 4536159680 /Users/ku_rong/My/Study/django_study/django_study/django_study/urls.py changed, reloading.
+INFO 2020-03-30 16:48:32,773 autoreload 2698 4602920384 Watching for file changes with StatReloader
+ERROR 2020-03-30 16:48:35,457 log 2698 123145374498816 Internal Server Error: /app18/self-siganl1/
+Traceback (most recent call last):
+  File "/Users/ku_rong/anaconda3/envs/study_django/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/ku_rong/anaconda3/envs/study_django/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/ku_rong/anaconda3/envs/study_django/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: test_signal() takes 0 positional arguments but 1 was given
+ERROR 2020-03-30 16:48:35,457 basehttp 2698 123145374498816 "GET /app18/self-siganl1/ HTTP/1.1" 500 64126
+INFO 2020-03-30 17:03:53,366 autoreload 2698 4602920384 /Users/ku_rong/My/Study/django_study/django_study/app18/views.py changed, reloading.
+INFO 2020-03-30 17:03:53,905 autoreload 2852 4570320320 Watching for file changes with StatReloader
+ERROR 2020-03-30 17:03:57,622 log 2852 123145338261504 Internal Server Error: /app18/self-siganl1/
+Traceback (most recent call last):
+  File "/Users/ku_rong/anaconda3/envs/study_django/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/ku_rong/anaconda3/envs/study_django/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/ku_rong/anaconda3/envs/study_django/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ku_rong/My/Study/django_study/django_study/app18/views.py", line 11, in test_signal
+    Signal.send(self_signal1)
+TypeError: send() missing 1 required positional argument: 'sender'
+ERROR 2020-03-30 17:03:57,622 basehttp 2852 123145338261504 "GET /app18/self-siganl1/ HTTP/1.1" 500 66908
+INFO 2020-03-30 17:05:22,973 autoreload 2852 4570320320 /Users/ku_rong/My/Study/django_study/django_study/app18/views.py changed, reloading.
+INFO 2020-03-30 17:05:23,346 autoreload 2862 4504632768 Watching for file changes with StatReloader
+INFO 2020-03-30 17:06:22,918 autoreload 2862 4504632768 /Users/ku_rong/My/Study/django_study/django_study/app18/views.py changed, reloading.
+INFO 2020-03-30 17:06:23,241 autoreload 2866 4631711168 Watching for file changes with StatReloader
+INFO 2020-03-30 17:06:39,806 autoreload 2866 4631711168 /Users/ku_rong/My/Study/django_study/django_study/app18/views.py changed, reloading.
+INFO 2020-03-30 17:06:40,160 autoreload 2868 4520230336 Watching for file changes with StatReloader
+ERROR 2020-03-30 17:06:46,392 log 2868 123145466454016 Internal Server Error: /app18/self-siganl1/
+Traceback (most recent call last):
+  File "/Users/ku_rong/anaconda3/envs/study_django/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/ku_rong/anaconda3/envs/study_django/lib/python3.7/site-packages/django/utils/deprecation.py", line 96, in __call__
+    response = self.process_response(request, response)
+  File "/Users/ku_rong/anaconda3/envs/study_django/lib/python3.7/site-packages/django/middleware/clickjacking.py", line 26, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'str' object has no attribute 'get'
+ERROR 2020-03-30 17:06:46,393 basehttp 2868 123145466454016 "GET /app18/self-siganl1/ HTTP/1.1" 500 60916
+INFO 2020-03-30 17:08:57,680 autoreload 2868 4520230336 /Users/ku_rong/My/Study/django_study/django_study/app18/views.py changed, reloading.
+INFO 2020-03-30 17:08:58,040 autoreload 2884 4511206848 Watching for file changes with StatReloader
+INFO 2020-03-30 17:09:01,043 basehttp 2884 123145376628736 "GET /app18/self-siganl1/ HTTP/1.1" 200 20
+INFO 2020-03-30 17:18:55,601 autoreload 2884 4511206848 /Users/ku_rong/My/Study/django_study/django_study/app18/signals.py changed, reloading.
+INFO 2020-03-30 17:18:56,032 autoreload 2948 4589309376 Watching for file changes with StatReloader
+INFO 2020-03-30 17:20:17,394 autoreload 2948 4589309376 /Users/ku_rong/My/Study/django_study/django_study/app18/signals.py changed, reloading.
+INFO 2020-03-30 17:20:17,777 autoreload 2964 4322790848 Watching for file changes with StatReloader
+INFO 2020-03-30 17:44:35,479 autoreload 2964 4322790848 /Users/ku_rong/My/Study/django_study/django_study/app18/signals.py changed, reloading.
+INFO 2020-03-30 17:44:36,035 autoreload 3133 4705758656 Watching for file changes with StatReloader
+INFO 2020-03-30 17:51:16,555 autoreload 3133 4705758656 /Users/ku_rong/My/Study/django_study/django_study/app18/signals.py changed, reloading.
+INFO 2020-03-30 17:51:17,113 autoreload 3179 4475280832 Watching for file changes with StatReloader
+INFO 2020-03-30 17:53:20,432 autoreload 3179 4475280832 /Users/ku_rong/My/Study/django_study/django_study/app18/signals.py changed, reloading.
+INFO 2020-03-30 17:53:20,795 autoreload 3191 4556561856 Watching for file changes with StatReloader
+INFO 2020-03-30 17:53:49,532 autoreload 3196 4585459136 Watching for file changes with StatReloader
+INFO 2020-03-30 17:54:28,367 autoreload 3204 4636306880 Watching for file changes with StatReloader
+INFO 2020-03-30 17:58:06,380 autoreload 3204 4636306880 /Users/ku_rong/My/Study/django_study/django_study/app18/views.py changed, reloading.
+INFO 2020-03-30 17:58:06,777 autoreload 3227 4383256000 Watching for file changes with StatReloader
+INFO 2020-03-30 17:58:38,475 autoreload 3227 4383256000 /Users/ku_rong/My/Study/django_study/django_study/app18/views.py changed, reloading.
+INFO 2020-03-30 17:58:38,829 autoreload 3237 4466519488 Watching for file changes with StatReloader
+INFO 2020-03-30 17:59:09,471 autoreload 3237 4466519488 /Users/ku_rong/My/Study/django_study/django_study/app18/urls.py changed, reloading.
+INFO 2020-03-30 17:59:09,823 autoreload 3244 4456177088 Watching for file changes with StatReloader
+INFO 2020-03-30 17:59:16,948 basehttp 3244 123145446526976 "GET /app18/self-siganl2/ HTTP/1.1" 200 20
+INFO 2020-03-30 18:00:16,133 autoreload 3244 4456177088 /Users/ku_rong/My/Study/django_study/django_study/app18/signals.py changed, reloading.
+INFO 2020-03-30 18:00:16,502 autoreload 3259 4700061120 Watching for file changes with StatReloader
+INFO 2020-03-30 18:00:19,899 basehttp 3259 123145508716544 "GET /app18/self-siganl2/ HTTP/1.1" 200 20
+INFO 2020-03-30 18:00:32,069 autoreload 3259 4700061120 /Users/ku_rong/My/Study/django_study/django_study/app18/signals.py changed, reloading.
+INFO 2020-03-30 18:00:32,421 autoreload 3263 4538838464 Watching for file changes with StatReloader
+INFO 2020-03-30 18:00:34,483 basehttp 3263 123145323454464 "GET /app18/self-siganl2/ HTTP/1.1" 200 20
+INFO 2020-03-30 18:01:30,238 autoreload 3263 4538838464 /Users/ku_rong/My/Study/django_study/django_study/app18/signals.py changed, reloading.
+INFO 2020-03-30 18:01:30,650 autoreload 3280 4643909056 Watching for file changes with StatReloader
+INFO 2020-03-30 18:01:35,554 basehttp 3280 123145425694720 "GET /app18/self-siganl2/ HTTP/1.1" 200 20
+INFO 2020-03-30 18:21:33,665 autoreload 3280 4643909056 /Users/ku_rong/My/Study/django_study/django_study/app18/signals.py changed, reloading.
+INFO 2020-03-30 18:21:34,232 autoreload 3412 4669296064 Watching for file changes with StatReloader
+INFO 2020-03-30 18:21:37,382 basehttp 3412 123145388826624 "GET /app18/self-siganl2/ HTTP/1.1" 200 20
+INFO 2020-03-30 18:21:58,564 autoreload 3412 4669296064 /Users/ku_rong/My/Study/django_study/django_study/app18/signals.py changed, reloading.
+INFO 2020-03-30 18:21:58,897 autoreload 3417 4601130432 Watching for file changes with StatReloader
+INFO 2020-03-30 18:34:49,103 basehttp 3417 123145490202624 "GET /app18/self-siganl2/ HTTP/1.1" 200 20
+INFO 2020-03-30 18:44:53,429 autoreload 3417 4601130432 /Users/ku_rong/My/Study/django_study/django_study/app18/views.py changed, reloading.
+INFO 2020-03-30 18:44:53,998 autoreload 3565 4637191616 Watching for file changes with StatReloader
+INFO 2020-03-30 18:44:58,806 autoreload 3565 4637191616 /Users/ku_rong/My/Study/django_study/django_study/app18/views.py changed, reloading.
+INFO 2020-03-30 18:44:59,161 autoreload 3567 4581985728 Watching for file changes with StatReloader
+INFO 2020-03-30 18:46:16,163 autoreload 3567 4581985728 /Users/ku_rong/My/Study/django_study/django_study/app18/views.py changed, reloading.
+INFO 2020-03-30 18:46:16,671 autoreload 3574 4428344768 Watching for file changes with StatReloader
+INFO 2020-03-30 18:46:48,385 autoreload 3574 4428344768 /Users/ku_rong/My/Study/django_study/django_study/app18/views.py changed, reloading.
+INFO 2020-03-30 18:46:48,832 autoreload 3587 4520631744 Watching for file changes with StatReloader
+ERROR 2020-03-30 18:49:47,024 log 3587 123145318244352 Internal Server Error: /app18/self-siganl2/
+Traceback (most recent call last):
+  File "/Users/ku_rong/anaconda3/envs/study_django/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/ku_rong/anaconda3/envs/study_django/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/ku_rong/anaconda3/envs/study_django/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ku_rong/anaconda3/envs/study_django/lib/python3.7/site-packages/django/views/decorators/http.py", line 40, in inner
+    return func(request, *args, **kwargs)
+  File "/Users/ku_rong/My/Study/django_study/django_study/app18/views.py", line 21, in test_request_log
+    print(request.raw_post_data)
+AttributeError: 'WSGIRequest' object has no attribute 'raw_post_data'
+ERROR 2020-03-30 18:49:47,025 basehttp 3587 123145318244352 "POST /app18/self-siganl2/ HTTP/1.1" 500 69540
+ERROR 2020-03-30 18:50:50,479 log 3587 123145318244352 Internal Server Error: /app18/self-siganl2/
+Traceback (most recent call last):
+  File "/Users/ku_rong/anaconda3/envs/study_django/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/ku_rong/anaconda3/envs/study_django/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/ku_rong/anaconda3/envs/study_django/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ku_rong/anaconda3/envs/study_django/lib/python3.7/site-packages/django/views/decorators/http.py", line 40, in inner
+    return func(request, *args, **kwargs)
+  File "/Users/ku_rong/My/Study/django_study/django_study/app18/views.py", line 21, in test_request_log
+    print(request.raw_post_data)
+AttributeError: 'WSGIRequest' object has no attribute 'raw_post_data'
+ERROR 2020-03-30 18:50:50,480 basehttp 3587 123145318244352 "POST /app18/self-siganl2/?name=ku_rong&age=18&work=python HTTP/1.1" 500 70406
+INFO 2020-03-30 18:51:14,741 autoreload 3587 4520631744 /Users/ku_rong/My/Study/django_study/django_study/app18/views.py changed, reloading.
+INFO 2020-03-30 18:51:15,303 autoreload 3621 4558314944 Watching for file changes with StatReloader
+ERROR 2020-03-30 18:51:20,149 log 3621 123145486848000 Internal Server Error: /app18/self-siganl2/
+Traceback (most recent call last):
+  File "/Users/ku_rong/anaconda3/envs/study_django/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/ku_rong/anaconda3/envs/study_django/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/ku_rong/anaconda3/envs/study_django/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ku_rong/anaconda3/envs/study_django/lib/python3.7/site-packages/django/views/decorators/http.py", line 40, in inner
+    return func(request, *args, **kwargs)
+  File "/Users/ku_rong/My/Study/django_study/django_study/app18/views.py", line 21, in test_request_log
+    print(request.raw_post_data)
+AttributeError: 'WSGIRequest' object has no attribute 'raw_post_data'
+ERROR 2020-03-30 18:51:20,151 basehttp 3621 123145486848000 "POST /app18/self-siganl2/?name=ku_rong&age=18&work=python HTTP/1.1" 500 70408
+INFO 2020-03-30 18:51:41,871 autoreload 3621 4558314944 /Users/ku_rong/My/Study/django_study/django_study/app18/views.py changed, reloading.
+INFO 2020-03-30 18:51:42,235 autoreload 3626 4430687680 Watching for file changes with StatReloader
+INFO 2020-03-30 18:51:48,351 basehttp 3626 123145343823872 "POST /app18/self-siganl2/?name=ku_rong&age=18&work=python HTTP/1.1" 200 20
+INFO 2020-03-30 18:52:20,487 autoreload 3626 4430687680 /Users/ku_rong/My/Study/django_study/django_study/app18/views.py changed, reloading.
+INFO 2020-03-30 18:52:20,847 autoreload 3634 4618059200 Watching for file changes with StatReloader
+INFO 2020-03-30 18:52:28,183 basehttp 3634 123145398374400 "POST /app18/self-siganl2/?name=ku_rong&age=18&work=python HTTP/1.1" 200 20
+INFO 2020-03-30 18:53:12,982 basehttp 3634 123145398374400 "POST /app18/self-siganl2/?name=ku_rong&age=18&work=python HTTP/1.1" 200 20
+INFO 2020-03-30 18:53:21,877 autoreload 3634 4618059200 /Users/ku_rong/My/Study/django_study/django_study/app18/views.py changed, reloading.
+INFO 2020-03-30 18:53:22,241 autoreload 3640 4392730048 Watching for file changes with StatReloader
+INFO 2020-03-30 18:53:24,504 basehttp 3640 123145351368704 "POST /app18/self-siganl2/?name=ku_rong&age=18&work=python HTTP/1.1" 200 20
+INFO 2020-03-30 18:54:06,860 autoreload 3640 4392730048 /Users/ku_rong/My/Study/django_study/django_study/app18/views.py changed, reloading.
+INFO 2020-03-30 18:54:07,226 autoreload 3644 4465774016 Watching for file changes with StatReloader
+ERROR 2020-03-30 18:54:10,897 log 3644 123145316098048 Internal Server Error: /app18/self-siganl2/
+Traceback (most recent call last):
+  File "/Users/ku_rong/anaconda3/envs/study_django/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/ku_rong/anaconda3/envs/study_django/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/ku_rong/anaconda3/envs/study_django/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ku_rong/anaconda3/envs/study_django/lib/python3.7/site-packages/django/views/decorators/http.py", line 40, in inner
+    return func(request, *args, **kwargs)
+  File "/Users/ku_rong/My/Study/django_study/django_study/app18/views.py", line 21, in test_request_log
+    print(request.raw_post_data)
+AttributeError: 'WSGIRequest' object has no attribute 'raw_post_data'
+ERROR 2020-03-30 18:54:10,898 basehttp 3644 123145316098048 "POST /app18/self-siganl2/?name=ku_rong&age=18&work=python HTTP/1.1" 500 70978
+INFO 2020-03-30 18:54:33,753 autoreload 3644 4465774016 /Users/ku_rong/My/Study/django_study/django_study/app18/views.py changed, reloading.
+INFO 2020-03-30 18:54:34,112 autoreload 3655 4641676736 Watching for file changes with StatReloader
+INFO 2020-03-30 18:54:47,486 autoreload 3655 4641676736 /Users/ku_rong/My/Study/django_study/django_study/app18/signals.py changed, reloading.
+INFO 2020-03-30 18:54:47,838 autoreload 3660 4623740352 Watching for file changes with StatReloader
+INFO 2020-03-30 18:54:56,188 basehttp 3660 123145376710656 "POST /app18/self-siganl2/?name=ku_rong&age=18&work=python HTTP/1.1" 200 20
+INFO 2020-03-30 18:56:02,685 autoreload 3660 4623740352 /Users/ku_rong/My/Study/django_study/django_study/app18/signals.py changed, reloading.
+INFO 2020-03-30 18:56:03,070 autoreload 3668 4459810240 Watching for file changes with StatReloader
+INFO 2020-03-30 18:56:07,928 basehttp 3668 123145410691072 "POST /app18/self-siganl2/?name=ku_rong&age=18&work=python HTTP/1.1" 200 20

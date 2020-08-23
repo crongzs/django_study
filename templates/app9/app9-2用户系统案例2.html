@@ -1,0 +1,47 @@
+{% extends 'app9/app9-base.html' %}
+
+{% block body %}
+
+    <div style="text-align: center">
+        <h1>This is Register</h1>
+        <form action="" method="post">
+            <table>
+                <tbody>
+                <tr>
+                    <td>name</td>
+                    <td>
+                        <input type="text" name="name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>phone</td>
+                    <td>
+                        <input type="text" name="phone">
+                    </td>
+                </tr>
+                <tr>
+                    <td>pwd</td>
+                    <td>
+                        <input type="password" name="pwd">
+                    </td>
+                </tr>
+                <tr>
+                    <td>pwd again</td>
+                    <td>
+                        <input type="password" name="pwd1">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="submit">
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </form>
+        {% if message %}
+            <p>{{ message }}</p>
+        {% endif %}
+    </div>
+{% endblock %}

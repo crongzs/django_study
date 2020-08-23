@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>URL 标签</title>
+</head>
+<body>
+    <h1>URL标签</h1>
+    {% with page=page id=id %}
+        <p><a href="{% url 'app2:app2-7' id=id page=page %}">带参数跳转</a></p>
+    {% endwith %}
+</body>
+</html>

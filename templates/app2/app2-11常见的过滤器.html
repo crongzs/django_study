@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>常见的过滤器</title>
+</head>
+<body>
+    <h1>常见的模版过滤器</h1>
+    <h1>add 过滤器</h1>
+    {{ v1|add:v2 }}
+    <h1>cut 过滤器</h1>
+    {{ v3|cut:' ...' }}
+    <h1>date 过滤器</h1>
+    {{ now|date:'y M d D g a' }}
+    <h1>default 过滤器</h1>
+    {{ v4|default:'betelnut' }}
+    <h1>default_if_none 过滤器</h1>
+    {{ v5|default_if_none:'berry' }}
+    <h1>first 过滤器</h1>
+    {{ v6|first }}
+    <h1>last 过滤器</h1>
+    {{ v6|last }}
+    <h1>floatformat 过滤器</h1>
+    {{ v7.0|floatformat }} {{ v7.1|floatformat }} {{ v7.2|floatformat }}
+    {{ v7.0|floatformat:'3' }} {{ v7.1|floatformat:'3' }} {{ v7.2|floatformat:'3' }}
+    <h1>join 过滤器</h1>
+    {{ v8|join:' and ' }}
+    <h1>length 过滤器</h1>
+    {{ v8|length }}
+    <h1>upper 过滤器</h1>
+    {{ v8.0|upper }}
+    <h1>lower 过滤器</h1>
+    {{ v8.0|lower }}
+    <h1>random 过滤器</h1>
+    {{ v8|random }}
+    <h1>safe 过滤器</h1>
+    {{ v9|safe }}
+    <h1>slice 过滤器</h1>
+    {{ v8|slice:"1:" }} {{ v3|slice:":-4" }}
+    <h1>striptags 过滤器</h1>
+    {{ v10|striptags }}
+    <h1>truncatechars 过滤器</h1>
+    {{ v11|truncatechars:'20' }}
+    <h1>truncatechars_html 过滤器</h1>
+    {{ v12|truncatechars_html:'20' }}
+</body>
+</html>

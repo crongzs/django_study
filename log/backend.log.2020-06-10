@@ -1,0 +1,185 @@
+INFO 2020-06-10 16:47:22,079 autoreload 4797 4650450368 Watching for file changes with StatReloader
+WARNING 2020-06-10 16:48:16,451 log 4797 123145563025408 Not Found: /
+WARNING 2020-06-10 16:48:16,452 basehttp 4797 123145563025408 "GET / HTTP/1.1" 404 4382
+WARNING 2020-06-10 16:48:17,164 log 4797 123145563025408 Not Found: /favicon.ico
+WARNING 2020-06-10 16:48:17,164 basehttp 4797 123145563025408 "GET /favicon.ico HTTP/1.1" 404 4433
+WARNING 2020-06-10 16:48:31,990 log 4797 123145563025408 Not Found: /app5/
+WARNING 2020-06-10 16:48:31,990 basehttp 4797 123145563025408 "GET /app5/ HTTP/1.1" 404 5553
+INFO 2020-06-10 16:49:09,884 basehttp 4797 123145563025408 "GET /app5/get-errors/ HTTP/1.1" 200 374
+INFO 2020-06-10 16:49:19,420 basehttp 4797 123145563025408 "POST /app5/get-errors/ HTTP/1.1" 200 4
+INFO 2020-06-10 16:50:39,767 autoreload 4797 4650450368 /Users/ku_rong/My/Study/django_study/django_study/app5/views.py changed, reloading.
+INFO 2020-06-10 16:50:40,145 autoreload 4835 4514467264 Watching for file changes with StatReloader
+INFO 2020-06-10 16:50:43,035 basehttp 4835 123145436741632 "GET /app5/get-errors/ HTTP/1.1" 200 374
+INFO 2020-06-10 16:50:45,465 basehttp 4835 123145436741632 "POST /app5/get-errors/ HTTP/1.1" 200 4
+INFO 2020-06-10 16:51:04,157 basehttp 4835 123145436741632 "GET /app5/get-errors/ HTTP/1.1" 200 374
+INFO 2020-06-10 16:51:04,418 autoreload 4835 4514467264 /Users/ku_rong/My/Study/django_study/django_study/app5/views.py changed, reloading.
+INFO 2020-06-10 16:51:04,792 autoreload 4842 4526140864 Watching for file changes with StatReloader
+INFO 2020-06-10 16:51:11,163 basehttp 4842 123145386651648 "POST /app5/get-errors/ HTTP/1.1" 200 4
+INFO 2020-06-10 16:51:31,307 autoreload 4842 4526140864 /Users/ku_rong/My/Study/django_study/django_study/app5/views.py changed, reloading.
+INFO 2020-06-10 16:51:31,682 autoreload 4850 4635823552 Watching for file changes with StatReloader
+INFO 2020-06-10 16:51:35,121 basehttp 4850 123145432702976 "GET /app5/get-errors/ HTTP/1.1" 200 374
+ERROR 2020-06-10 16:51:36,264 log 4850 123145432702976 Internal Server Error: /app5/get-errors/
+Traceback (most recent call last):
+  File "/Users/ku_rong/anaconda3/envs/study_django/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/ku_rong/anaconda3/envs/study_django/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/ku_rong/anaconda3/envs/study_django/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ku_rong/anaconda3/envs/study_django/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/ku_rong/anaconda3/envs/study_django/lib/python3.7/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/ku_rong/My/Study/django_study/django_study/app5/views.py", line 115, in post
+    print(form.get_errors.get_json_data())
+AttributeError: 'function' object has no attribute 'get_json_data'
+ERROR 2020-06-10 16:51:36,265 basehttp 4850 123145432702976 "POST /app5/get-errors/ HTTP/1.1" 500 78430
+INFO 2020-06-10 16:51:50,519 basehttp 4850 123145432702976 "GET /app5/get-errors/ HTTP/1.1" 200 374
+INFO 2020-06-10 16:51:50,648 autoreload 4850 4635823552 /Users/ku_rong/My/Study/django_study/django_study/app5/views.py changed, reloading.
+INFO 2020-06-10 16:51:51,018 autoreload 4857 4475305408 Watching for file changes with StatReloader
+INFO 2020-06-10 16:51:51,911 basehttp 4857 123145455673344 "POST /app5/get-errors/ HTTP/1.1" 200 4
+INFO 2020-06-10 16:52:25,010 autoreload 4857 4475305408 /Users/ku_rong/My/Study/django_study/django_study/app5/forms.py changed, reloading.
+INFO 2020-06-10 16:52:25,377 autoreload 4868 4536872384 Watching for file changes with StatReloader
+INFO 2020-06-10 16:52:27,278 basehttp 4868 123145509740544 "GET /app5/get-errors/ HTTP/1.1" 200 374
+INFO 2020-06-10 16:52:28,883 basehttp 4868 123145509740544 "POST /app5/get-errors/ HTTP/1.1" 200 4
+INFO 2020-06-10 16:53:19,869 autoreload 4868 4536872384 /Users/ku_rong/My/Study/django_study/django_study/app5/forms.py changed, reloading.
+INFO 2020-06-10 16:53:20,251 autoreload 4883 4643335616 Watching for file changes with StatReloader
+INFO 2020-06-10 16:53:24,774 basehttp 4883 123145380507648 "GET /app5/get-errors/ HTTP/1.1" 200 374
+INFO 2020-06-10 16:53:26,540 basehttp 4883 123145380507648 "POST /app5/get-errors/ HTTP/1.1" 200 4
+INFO 2020-06-10 16:54:07,256 autoreload 4883 4643335616 /Users/ku_rong/My/Study/django_study/django_study/app5/forms.py changed, reloading.
+INFO 2020-06-10 16:54:07,626 autoreload 4903 4460072384 Watching for file changes with StatReloader
+INFO 2020-06-10 16:54:12,638 basehttp 4903 123145523924992 "GET /app5/get-errors/ HTTP/1.1" 200 374
+INFO 2020-06-10 16:54:14,232 basehttp 4903 123145523924992 "POST /app5/get-errors/ HTTP/1.1" 200 4
+INFO 2020-06-10 16:54:44,864 autoreload 4903 4460072384 /Users/ku_rong/My/Study/django_study/django_study/app5/views.py changed, reloading.
+INFO 2020-06-10 16:54:45,221 autoreload 4911 4659445184 Watching for file changes with StatReloader
+INFO 2020-06-10 16:54:47,461 basehttp 4911 123145458016256 "GET /app5/get-errors/ HTTP/1.1" 200 374
+ERROR 2020-06-10 16:54:50,487 log 4911 123145458016256 Internal Server Error: /app5/get-errors/
+Traceback (most recent call last):
+  File "/Users/ku_rong/anaconda3/envs/study_django/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/ku_rong/anaconda3/envs/study_django/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/ku_rong/anaconda3/envs/study_django/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ku_rong/anaconda3/envs/study_django/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/ku_rong/anaconda3/envs/study_django/lib/python3.7/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/ku_rong/My/Study/django_study/django_study/app5/views.py", line 115, in post
+    print(form.errors.get_json_data()[0])
+KeyError: 0
+ERROR 2020-06-10 16:54:50,487 basehttp 4911 123145458016256 "POST /app5/get-errors/ HTTP/1.1" 500 78102
+INFO 2020-06-10 16:55:03,062 autoreload 4911 4659445184 /Users/ku_rong/My/Study/django_study/django_study/app5/views.py changed, reloading.
+INFO 2020-06-10 16:55:03,448 autoreload 4916 4575088064 Watching for file changes with StatReloader
+INFO 2020-06-10 16:55:04,924 basehttp 4916 123145513246720 "GET /app5/get-errors/ HTTP/1.1" 200 374
+INFO 2020-06-10 17:00:07,005 autoreload 4916 4575088064 /Users/ku_rong/My/Study/django_study/django_study/app5/views.py changed, reloading.
+INFO 2020-06-10 17:00:07,574 autoreload 5020 4457602496 Watching for file changes with StatReloader
+ERROR 2020-06-10 17:00:10,978 log 5020 123145581060096 Internal Server Error: /app5/get-errors/
+Traceback (most recent call last):
+  File "/Users/ku_rong/anaconda3/envs/study_django/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/ku_rong/anaconda3/envs/study_django/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/ku_rong/anaconda3/envs/study_django/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ku_rong/anaconda3/envs/study_django/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/ku_rong/anaconda3/envs/study_django/lib/python3.7/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/ku_rong/My/Study/django_study/django_study/app5/views.py", line 115, in post
+    print(errors[list(errors.keys()[0])])
+TypeError: 'dict_keys' object is not subscriptable
+ERROR 2020-06-10 17:00:10,979 basehttp 5020 123145581060096 "POST /app5/get-errors/ HTTP/1.1" 500 78948
+INFO 2020-06-10 17:00:56,851 autoreload 5020 4457602496 /Users/ku_rong/My/Study/django_study/django_study/app5/views.py changed, reloading.
+INFO 2020-06-10 17:00:57,350 autoreload 5037 4654755264 Watching for file changes with StatReloader
+INFO 2020-06-10 17:00:59,166 basehttp 5037 123145538363392 "GET /app5/get-errors/ HTTP/1.1" 200 374
+ERROR 2020-06-10 17:01:01,535 log 5037 123145538363392 Internal Server Error: /app5/get-errors/
+Traceback (most recent call last):
+  File "/Users/ku_rong/anaconda3/envs/study_django/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/ku_rong/anaconda3/envs/study_django/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/ku_rong/anaconda3/envs/study_django/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ku_rong/anaconda3/envs/study_django/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/ku_rong/anaconda3/envs/study_django/lib/python3.7/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/ku_rong/My/Study/django_study/django_study/app5/views.py", line 115, in post
+    print(list(errors.keys()[0]))
+TypeError: 'dict_keys' object is not subscriptable
+ERROR 2020-06-10 17:01:01,536 basehttp 5037 123145538363392 "POST /app5/get-errors/ HTTP/1.1" 500 78983
+INFO 2020-06-10 17:01:32,605 autoreload 5037 4654755264 /Users/ku_rong/My/Study/django_study/django_study/app5/views.py changed, reloading.
+INFO 2020-06-10 17:01:33,073 autoreload 5045 4394659264 Watching for file changes with StatReloader
+INFO 2020-06-10 17:01:38,231 basehttp 5045 123145562345472 "GET /app5/get-errors/ HTTP/1.1" 200 374
+INFO 2020-06-10 17:01:39,468 basehttp 5045 123145562345472 "POST /app5/get-errors/ HTTP/1.1" 200 4
+INFO 2020-06-10 17:02:05,063 autoreload 5045 4394659264 /Users/ku_rong/My/Study/django_study/django_study/app5/views.py changed, reloading.
+INFO 2020-06-10 17:02:05,567 autoreload 5054 4669316544 Watching for file changes with StatReloader
+INFO 2020-06-10 17:02:07,948 basehttp 5054 123145501208576 "GET /app5/get-errors/ HTTP/1.1" 200 374
+INFO 2020-06-10 17:02:10,273 basehttp 5054 123145501208576 "POST /app5/get-errors/ HTTP/1.1" 200 4
+INFO 2020-06-10 17:02:26,677 autoreload 5054 4669316544 /Users/ku_rong/My/Study/django_study/django_study/app5/views.py changed, reloading.
+INFO 2020-06-10 17:02:27,056 autoreload 5059 4680719808 Watching for file changes with StatReloader
+INFO 2020-06-10 17:02:29,584 basehttp 5059 123145562296320 "GET /app5/get-errors/ HTTP/1.1" 200 374
+ERROR 2020-06-10 17:02:31,101 log 5059 123145562296320 Internal Server Error: /app5/get-errors/
+Traceback (most recent call last):
+  File "/Users/ku_rong/anaconda3/envs/study_django/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/ku_rong/anaconda3/envs/study_django/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/ku_rong/anaconda3/envs/study_django/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ku_rong/anaconda3/envs/study_django/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/ku_rong/anaconda3/envs/study_django/lib/python3.7/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/ku_rong/My/Study/django_study/django_study/app5/views.py", line 115, in post
+    print(errors[list(errors.keys())[0][0]])
+KeyError: 'n'
+ERROR 2020-06-10 17:02:31,102 basehttp 5059 123145562296320 "POST /app5/get-errors/ HTTP/1.1" 500 78792
+INFO 2020-06-10 17:23:40,354 basehttp 5059 123145572806656 "GET /app5/get-errors/ HTTP/1.1" 200 374
+ERROR 2020-06-10 17:23:41,621 log 5059 123145572806656 Internal Server Error: /app5/get-errors/
+Traceback (most recent call last):
+  File "/Users/ku_rong/anaconda3/envs/study_django/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/ku_rong/anaconda3/envs/study_django/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/ku_rong/anaconda3/envs/study_django/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ku_rong/anaconda3/envs/study_django/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/ku_rong/anaconda3/envs/study_django/lib/python3.7/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/ku_rong/My/Study/django_study/django_study/app5/views.py", line 115, in post
+    print(errors[list(errors.keys())[0][0]])
+KeyError: 'n'
+ERROR 2020-06-10 17:23:41,621 basehttp 5059 123145572806656 "POST /app5/get-errors/ HTTP/1.1" 500 78792
+INFO 2020-06-10 17:23:58,268 basehttp 5059 123145572806656 "GET /app5/get-errors/ HTTP/1.1" 200 374
+INFO 2020-06-10 17:23:58,586 autoreload 5059 4680719808 /Users/ku_rong/My/Study/django_study/django_study/app5/views.py changed, reloading.
+INFO 2020-06-10 17:23:59,207 autoreload 5218 4395998656 Watching for file changes with StatReloader
+INFO 2020-06-10 17:24:00,498 basehttp 5218 123145440632832 "POST /app5/get-errors/ HTTP/1.1" 200 4
+INFO 2020-06-10 17:24:11,608 autoreload 5218 4395998656 /Users/ku_rong/My/Study/django_study/django_study/app5/views.py changed, reloading.
+INFO 2020-06-10 17:24:11,973 autoreload 5224 4564151744 Watching for file changes with StatReloader
+INFO 2020-06-10 17:24:13,675 basehttp 5224 123145340047360 "GET /app5/get-errors/ HTTP/1.1" 200 374
+INFO 2020-06-10 17:24:14,974 basehttp 5224 123145340047360 "POST /app5/get-errors/ HTTP/1.1" 200 4
+INFO 2020-06-10 17:24:40,606 autoreload 5224 4564151744 /Users/ku_rong/My/Study/django_study/django_study/app5/views.py changed, reloading.
+INFO 2020-06-10 17:24:40,996 autoreload 5230 4374896064 Watching for file changes with StatReloader
+INFO 2020-06-10 17:24:43,196 basehttp 5230 123145532276736 "GET /app5/get-errors/ HTTP/1.1" 200 374
+INFO 2020-06-10 17:24:45,017 basehttp 5230 123145532276736 "POST /app5/get-errors/ HTTP/1.1" 200 4
+INFO 2020-06-10 17:24:59,985 autoreload 5230 4374896064 /Users/ku_rong/My/Study/django_study/django_study/app5/views.py changed, reloading.
+INFO 2020-06-10 17:25:00,342 autoreload 5240 4567379392 Watching for file changes with StatReloader
+INFO 2020-06-10 17:25:00,858 basehttp 5240 123145569132544 "GET /app5/get-errors/ HTTP/1.1" 200 374
+INFO 2020-06-10 17:25:02,857 basehttp 5240 123145569132544 "POST /app5/get-errors/ HTTP/1.1" 200 4
+INFO 2020-06-10 17:27:12,999 autoreload 5240 4567379392 /Users/ku_rong/My/Study/django_study/django_study/app5/views.py changed, reloading.
+INFO 2020-06-10 17:27:13,368 autoreload 5267 4765822400 Watching for file changes with StatReloader
+WARNING 2020-06-10 17:27:49,648 log 5267 123145511895040 Not Found: /
+WARNING 2020-06-10 17:27:49,648 basehttp 5267 123145511895040 "GET / HTTP/1.1" 404 4382
+INFO 2020-06-10 17:27:58,287 basehttp 5267 123145511895040 "GET /app5/get-errors/ HTTP/1.1" 200 374
+INFO 2020-06-10 17:28:41,376 basehttp 5267 123145511895040 "POST /app5/get-errors/ HTTP/1.1" 200 29
+INFO 2020-06-10 17:29:35,709 autoreload 5267 4765822400 /Users/ku_rong/My/Study/django_study/django_study/app5/views.py changed, reloading.
+INFO 2020-06-10 17:29:36,094 autoreload 5294 4401094080 Watching for file changes with StatReloader
+INFO 2020-06-10 17:29:39,564 basehttp 5294 123145568432128 "GET /app5/get-errors/ HTTP/1.1" 200 374
+INFO 2020-06-10 17:30:11,055 basehttp 5294 123145568432128 "POST /app5/get-errors/ HTTP/1.1" 200 60
+INFO 2020-06-10 17:30:23,328 basehttp 5294 123145568432128 "GET /app5/get-errors/ HTTP/1.1" 200 374
+INFO 2020-06-10 17:30:38,229 basehttp 5294 123145568432128 "POST /app5/get-errors/ HTTP/1.1" 200 60
+INFO 2020-06-10 17:30:45,764 basehttp 5294 123145568432128 "GET /app5/get-errors/ HTTP/1.1" 200 374
+INFO 2020-06-10 17:31:04,394 basehttp 5294 123145568432128 "POST /app5/get-errors/ HTTP/1.1" 200 25

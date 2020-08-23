@@ -1,0 +1,18 @@
+{% extends 'app9/app9-base.html' %}
+
+{% block body %}
+    <div style="text-align: center">
+    <h1>This is Index</h1>
+    {% if username %}
+        <h2>Hello {{ username }}</h2>
+    {% endif %}
+    <h1>django.template.context_processors.debug</h1><p>{{ debug }} {{ sql_queries }}</p>
+    <h1>django.template.context_processors.request</h1><p>{{ request }}</p>
+    <h1>django.contrib.auth.context_processors.auth</h1><p>{{ user }}</p>
+    <h1>django.contrib.messages.context_processors.messages</h1>{{ messages }}<p></p>
+    {% for message in messages %}
+        {{ message }}
+    {% endfor %}
+
+    </div>
+{% endblock %}
